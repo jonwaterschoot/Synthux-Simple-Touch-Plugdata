@@ -13,6 +13,10 @@ Also make sure to try out sending different amounts of volume to the input using
 
 Please do feel free to further tweak this and let me know what can and should be improved.
 
+## Youtube demo
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/csmBTfaORss/0.jpg)](https://www.youtube.com/watch?v=csmBTfaORss)
+
+https://youtu.be/csmBTfaORss
 
 ## QUICK INSTALL
 Download the [Binary file](selfdistort_touch.bin) and flash using the [Daisy Seed web programmer](https://electro-smith.github.io/Programmer/)
@@ -53,4 +57,6 @@ Download the [Binary file](selfdistort_touch.bin) and flash using the [Daisy See
 - P10: reset / clear delay buffer
 - P11: toggle randomizer delay timing mix
 
-<img src="diagram.png" width="600"/>
+
+
+<img src="diagram_sketch.jpg"/>
