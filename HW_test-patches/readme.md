@@ -77,3 +77,5 @@ Playing the pads will let you hear a simple sine oscillator and light the userle
 - knob3 = pink noise 2 from knob2 volume
 - knob4 = speed of the pads and noise LFO when using the switchleft in either left or right position
 - knob5 = low pass filter `[hv.lop~]` on the overall audio out out
+
+![screenshot of the large full HW test patch](largetestingpatch.jpg)
