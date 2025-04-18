@@ -1,0 +1,87 @@
+{
+   "name": "SimpleTouch",
+   "som": "seed",
+   "audio": {
+     "channels": 2
+   },
+
+   "parents": {
+     "mpr121_driver": {
+       "component": "Mpr121"
+       }
+   },
+
+    "components": {
+       "faderleft": {
+           "component": "AnalogControl",
+           "pin": 21
+       },
+       "faderright": {
+           "component": "AnalogControl",
+           "pin": 22
+       },
+       "knob0": {
+           "component": "AnalogControl",
+           "pin": 15
+       },
+       "knob1": {
+           "component": "AnalogControl",
+           "pin": 16
+       },
+       "knob2": {
+           "component": "AnalogControl",
+           "pin": 17
+       },
+       "knob3": {
+           "component": "AnalogControl",
+           "pin": 18
+         },
+       "knob4": {
+           "component": "AnalogControl",
+           "pin": 19
+       },
+       "knob5": {
+           "component": "AnalogControl",
+           "pin": 20
+       },
+       "toggle1left": {
+           "component": "Switch",
+           "pin": 8
+       },
+       "toggle1right": {
+           "component": "Switch",
+           "pin": 9
+       },
+       "toggle2up": {
+           "component": "Switch",
+           "pin": 7
+       },
+       "toggle2down": {
+           "component": "Switch",
+           "pin": 6
+       },
+       "cv_1": {
+           "component": "AnalogControl",
+           "pin": 23
+       },
+       "cv_2": {
+           "component": "AnalogControl",
+           "pin": 24
+       },
+       "gate_in_1": {
+	   "component": "GateIn",
+	   "pin": 25
+  	},
+	"gate_in_2": {
+	   "component": "GateIn",
+	   "pin": 28
+  	},
+        "daisyled": {
+           "component": "UserLed"
+        }
+
+  }
+
+}
+
+
