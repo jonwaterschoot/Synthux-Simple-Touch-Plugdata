@@ -49,6 +49,9 @@ Here's a handy list with all the pin numbers: [Daisy seed / Synthux Simple Pin n
 ---
 ## Full testing patch using all the inputs, sliders, knobs, pads, audio in and out
 
+touchpadstest_osc_userled.bin
+touchpadstest_osc_userled.pd
+
 This is a larger testing patch that tests all the Simple Touch knobs, faders and pads.
 Playing the pads will let you hear a simple sine oscillator and light the userled, faders control volume in and out, knobs control some noise and other stuff:
 
@@ -79,3 +82,6 @@ Playing the pads will let you hear a simple sine oscillator and light the userle
 - knob5 = low pass filter `[hv.lop~]` on the overall audio out out
 
 ![screenshot of the large full HW test patch](largetestingpatch.jpg)
+
+---
+For the official Synthux website and all documentation go to [Synthux.academy](https://www.synthux.academy/)
