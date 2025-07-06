@@ -1,0 +1,38 @@
+{
+   "name": "SimpleTouch",
+   "som": "seed",
+   "audio": {
+     "channels": 2
+   },
+
+
+    "components": {
+       "knob0": {
+           "component": "AnalogControl",
+           "pin": 15
+       },
+       "knob1": {
+           "component": "AnalogControl",
+           "pin": 16
+       },
+       "button": {
+           "component": "Switch",
+           "pin": 6
+       },
+	"gate_out_1": {
+	   "component": "GateOut",
+	   "pin": 17
+  	},
+	"gate_out_2": {
+	   "component": "GateOut",
+	   "pin": 18
+  	},
+        "daisyled": {
+           "component": "UserLed"
+        }
+
+  }
+
+}
+
+
