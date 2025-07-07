@@ -12,7 +12,7 @@
 #X msg 1322 766 \$1 10;
 #X obj 1322 712 r knob5 @hv_param;
 #X obj 839 598 r mpr121_driver_ch3 @hv_param;
-#X obj 1059 459 r touchnote;
+#X obj 1059 392 r touchnote;
 #X obj 1454 412 loadbang;
 #X msg 1454 444 0.5;
 #X obj 839 698 sel 0 1;
@@ -24,7 +24,7 @@
 #X obj 839 511 midiout;
 #X obj 1250 887 *~;
 #X obj 1059 743 clip~ -0.95 0.95;
-#X obj 1059 644 sig~;
+#X obj 1059 540 sig~;
 #X obj 1059 791 *~;
 #X obj 1124 644 line~;
 #X obj 1124 540 / 127;
@@ -35,6 +35,9 @@
 #X msg 889 738 53 99;
 #X obj 1059 838 throw~ osc1;
 #X obj 1248 523 catch~ osc1;
+#X obj 1145 392 notein;
+#X obj 1059 644 mtof~;
+#X obj 1145 421 pack f f;
 #X connect 2 0 4 0;
 #X connect 3 0 5 1;
 #X connect 4 0 3 0;
@@ -59,7 +62,7 @@
 #X connect 23 0 1 0;
 #X connect 23 0 1 1;
 #X connect 24 0 26 0;
-#X connect 25 0 30 0;
+#X connect 25 0 37 0;
 #X connect 26 0 34 0;
 #X connect 27 0 26 1;
 #X connect 28 0 31 0;
@@ -70,3 +73,7 @@
 #X connect 32 0 17 0;
 #X connect 33 0 17 0;
 #X connect 35 0 5 0;
+#X connect 36 0 38 0;
+#X connect 36 1 38 1;
+#X connect 37 0 30 0;
+#X connect 38 0 29 0;
