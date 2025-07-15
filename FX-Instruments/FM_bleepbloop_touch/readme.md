@@ -16,6 +16,22 @@ Playable with trs / serial midi (and sometimes usb midi.)
 Download ([.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_1.bin))
 - USB midi is working sometimes, weird and inconsistent issue? The device sometimes get recognized by my windows pc's and android phone, sometimes it doesn't.
 
+### V 0.5 full randomized sequencer (array) + simple in one patch
+
+I've attempted to port the assigning and temporary saving of parameters as much as possible to arrays. This allows to use a larger range of note inputs.
+
+The array with which the pd file is set when compiling is saved. This means there are now already sounds in the array.
+
+> 🤔 An additional toggle to change the pitch/note numbers would be nice. Or perhaps a random pitch toggle for the sequencer.
+
+The array is set to 88, though only the 7 notes played on the touchpad are available at this time without midi. Serial midi works fine.
+
+Reworking the attack / decay randomizer. It still is not working.
+
+There's also an extra toggle via pad 1 (the one between the switches), this allows bypassing the array and playing the "simple version". Launching the sequencer in this mode will play from the 7 notes.
+
+Notes / pads are influencing the 4th modulation knob. This modulation is strongest when that knob is at maximum.
+
 ### V 0.4 full randomized sequencer
 
 [FM_bleepbloop_touch_v0-1.pd](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0-4.pd)
@@ -69,12 +85,19 @@ https://youtube.com/shorts/Ys92nRRQLP4
 
 ## QUICK INSTALL
 
-V0.4
+### V0.5 Full + Simple in one patch
+
+Download the [Binary file FM_bleepbloop_touch_v0_5.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_5.bin)
+
+### V0.4 Full - sequencer
 
 Download the [Binary file FM_bleepbloop_touch_v0_4.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_4.bin)
 
-Or the simpler V0.1 [Binary file FM_bleepbloop_touch_v0_1.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_1.bin) 
+### V0.1 Simple - sounds with pads only
 
+Download the [Binary file FM_bleepbloop_touch_v0_1.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_1.bin) 
+
+---
 and flash using the [Daisy web programmer](https://flash.daisy.audio/)
 
 You might need to install the bootloader first. (last tab on that page)
@@ -90,7 +113,7 @@ Note: In my Plugdata patches I number the knobs starting at 0, so 6 knobs, 0 - 5
 - Left switch S09-OFF-S10 = on/off/on switch: **sequence length** 
     - left 4 steps
     - middle: 6 steps
-    - right: 3 steps (:bug: acts as six)
+    - right: 3 - 8 steps (:bug: acts as six) TODO!
 - Rightswitch S07-OFF-S08 = on/off/on switch: **chance for randomizers** multiplier
     - down: 1/1 - no chance always on
     - middle: 1/2
@@ -113,7 +136,7 @@ Note: In my Plugdata patches I number the knobs starting at 0, so 6 knobs, 0 - 5
 - **P0: randomize sequence** - random value to each step:
     - set a random of 7 pad numbers value
     - set a random on / off
-- **P1:** - not yet used 
+- **P1:** - toggle bypass for array - bypassing and play the "simple version". Launching the sequencer in this mode will play from the 7 pads/notes instead of the array.
 - **P2: randomize attack decay**
     - not yet properly working
 - **P10: toggle recording mode** - userled will flicker and indicate it is recording
@@ -135,12 +158,19 @@ Note: In my Plugdata patches I number the knobs starting at 0, so 6 knobs, 0 - 5
 
 - midi implementation
     - USB midi is working sometimes, weird and inconsistent issue? The device sometimes get recognized by my windows pc's and android phone, sometimes it doesn't.
-    - playing and recording other notes than the 36 - 42 range
+    - ~~- playing and recording other notes than the 36 - 42 range~~ > Done ✔️
 - Attack / decay randomizer is buggy and/or not working
-- Sequencer length has three settings: 4, 6 and 3. However 6 and 3 are both played the full 6 steps
+- Sequencer length has three settings: ~~4, 6 and 3. However 6 and 3 are both played the full 6 steps~~ Changed to 8 steps, problem still present. Only two options active atm.
 
 future ideas:
 - added motion, ADSR or other methods to change parameters per step
+
+- An additional toggle to change the pitch/note numbers would be nice. Or perhaps a random pitch toggle for the sequencer.
+
+- randomize all arrays
+
+- auto fill the amount of changed notes to fill the random step generator. Or to be able to erase pads from the sequence.
+
 
 -bugfixing
 - finish this list
