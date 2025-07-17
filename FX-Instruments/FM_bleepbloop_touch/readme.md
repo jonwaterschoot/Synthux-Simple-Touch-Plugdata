@@ -17,6 +17,13 @@ Download ([.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_1.bi
 - USB midi is working sometimes, weird and inconsistent issue? The device sometimes get recognized by my windows pc's and android phone, sometimes it doesn't.
 
 ### V 0.5 full randomized sequencer (array) + simple in one patch
+---
+> v0.5.1 
+- adding a tempo multiplier [seq P10 + P8/P9]
+- a second randomized tempo, based on main tempo devisions and chance (sound remains mono, sounds cut off) [seq P10 + P4/P6]
+- trying to further tweak the attack decay, the randomizer should be able to set back to 0, add secondary pad combo
+- I still have to tweak this and document the secondary button combo's 
+---
 
 I've attempted to port the assigning and temporary saving of parameters as much as possible to arrays. This allows to use a larger range of note inputs.
 
@@ -81,6 +88,11 @@ YouTube demo of v0.4 + second Simple Touch running selfdistort_touch
 
 [![a youtube demo of v0.4 + second Simple Touch](https://img.youtube.com/vi/Ys92nRRQLP4/0.jpg)](https://www.youtube.com/watch?v=Ys92nRRQLP4)
 https://youtube.com/shorts/Ys92nRRQLP4
+
+YouTube demo of v0.4 + Wingie2 resonator and a little techno drum.
+[![a youtube demo of v0.4 with Wingie2](https://img.youtube.com/vi/Z75hTTqJfyg/0.jpg)](https://www.youtube.com/watch?v=Z75hTTqJfyg)
+https://youtube.com/shorts/Z75hTTqJfyg
+
 
 
 ## QUICK INSTALL
