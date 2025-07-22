@@ -29,7 +29,7 @@ In its simplest description FM_BleepBloop is just a complex FM oscillator (based
 
 ![overview with color coded pads](/FX-Instruments/FM_bleepbloop_touch/img/FM_BleepBloop_Touch_manualwhite.png)
 
-This image will be updated with cleaner lettering, listing all controls
+(There's a version with black behind the text in the /img folder.)
 
 ---
 
