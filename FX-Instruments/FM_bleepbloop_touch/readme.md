@@ -27,7 +27,7 @@ In its simplest description FM_BleepBloop is just a complex FM oscillator (based
 
 ---
 
-![overview with color coded pads](/FX-Instruments/FM_bleepbloop_touch/img/SimpleTouchPCB_FM_BleepBloopCleancut.JPG)
+![overview with color coded pads](/FX-Instruments/FM_bleepbloop_touch/img/FM_BleepBloop_Touch_manualwhite.png)
 
 This image will be updated with cleaner lettering, listing all controls
 
@@ -35,9 +35,7 @@ This image will be updated with cleaner lettering, listing all controls
 
 ## summarized controls table:
 
-![sketch overview with color coded pads and description](/FX-Instruments/FM_bleepbloop_touch/img/SimpleTouchPCB_FM_BleepBloop.png)
-
-Here's a clean table listing all the controls for FM_BleepBloop, For more detailed info see below.
+Here's a table listing all the controls for FM_BleepBloop, For more detailed info see below.
 
 ---
 
@@ -293,3 +291,5 @@ You might need to install the bootloader first. (last tab on that page)
 - timing is calculated with 24PPQN values, yet tends to be a slower division than midi. Using the multiplier (P11 + P8/P9) will help get to a faster division.
 
 ---
+
+![sketch overview with color coded pads and description](/FX-Instruments/FM_bleepbloop_touch/img/SimpleTouchPCB_FM_BleepBloop.png)
