@@ -260,7 +260,30 @@ and flash using the [Daisy web programmer](https://flash.daisy.audio/)
 
 You might need to install the bootloader first. (last tab on that page)
 
+### V0.7.1 - in progress
+
+- update:
+    - panning was set to left as default on booting
+    - audio in can be toggled on/off by using P10 + P11
+
+- Working on a temposync function by using the audio in as a tap tempo source. So you could use a 4/4 beat to set the tempo if no midi or clock is installed.
+- To turn on beatsyncing by audio use P11 + P5, the led will flicker on beat detection. (an improved version needing less calculation was shown to me by user denisC on Discord)
+
+- to do
+    - bugs
+    - update this manual and the manual image
+    - create new .bin
+    - create video manual
+    - move on :-) 
+
+- unsolved bugs / issues:
+    - recording is set via multitouch, but that means that turning off recording will also program the switch button to the last setup sound. (though programming does need a double tap)
+
+    - Finding interesting patterns can sometimes take a while, in the  future i should look into using a few presets as well as the random functions. 
+
 ---
+
+
 
 ## Notes on clock and midi
 
