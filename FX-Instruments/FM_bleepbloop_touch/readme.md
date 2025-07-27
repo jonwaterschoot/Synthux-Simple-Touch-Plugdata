@@ -56,6 +56,8 @@ Here's a table listing all the controls for FM_BleepBloop, For more detailed inf
 |                    | Sequence Randomizer             | P0                             |
 |                    | Fill FM Arrays Randomly         | P1 + P3                        |
 |                    | Toggle Modulator Animation      | P1 + P7                        |
+|                    | Audio in Toggle                 | P10 + P11                      |
+|                    | Listen to audio in Tap Tempo    | P11 + P5                       |
 |                    | Record FM Knobs to Array        | P10 + P3                       |
 |                    | Toggle Main Sequencer           | P11 + P7                       |
 |                    | Secondary Sequencer Probability | P11 + P4 (−), P11 + P6 (+)     |
@@ -145,9 +147,21 @@ What each one supposedly does:
 - internal sequencer follows the right fader tempo and is unsynced from external syncing, meaning that when turned on and you have an external other tempo, they could both trigger steps.
 - sequence length is set between, 2, 4 and 8 steps.
 
-**P11 + P7 - internal sequencer on/off**
+**P11 + P7 - (internal) sequencer on/off**
 
 - toggle on/off; press and hold P11 + touch and release P7 to toggle
+
+**P10 + P11 - toggle audio in out/off**
+
+- toggle on/off; press and hold P11 + touch and release P10 to toggle
+
+**P10 + P5 - start listening to ext audio beat for sync**
+
+- to ensure right slider doesn't intervene, set it at lowest position.
+- toggle on/off; press and hold P10 + touch and release P5 to toggle
+- functions like a tap tempo, averages timing from every 4 input triggers. This better method was shown to me by user denisC on discord. (tempo is held after toggling off)
+- audio in is detected with or without active P10 + P11
+- LED will blink on trigger detection.
 
 **P0 - sequence randomizer**
 
