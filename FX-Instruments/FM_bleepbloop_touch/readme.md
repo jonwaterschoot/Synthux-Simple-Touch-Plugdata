@@ -252,33 +252,33 @@ More video's on my YouTube and Instagram pages.
 
 ## QUICK INSTALL
 
-### V0.7
+### V0.8
 
-Download the [Binary file FM_bleepbloop_touch_v0_7.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_7.bin)
+Download the [Binary file FM_bleepbloop_touch_v0_8.bin](/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_8.bin)
 
 and flash using the [Daisy web programmer](https://flash.daisy.audio/)
 
 You might need to install the bootloader first. (last tab on that page)
 
-### V0.7.1 - in progress
+### update notes from v 0.7 +
 
-- update:
-    - panning was set to left as default on booting
-    - audio in can be toggled on/off by using P10 + P11
+- updated:
+    - panning was set to left as default on booting: fixed
+    - audio in can be toggled on/off by using **P10 + P11**
 
-- Working on a temposync function by using the audio in as a tap tempo source. So you could use a 4/4 beat to set the tempo if no midi or clock is installed.
-- To turn on beatsyncing by audio use P11 + P5, the led will flicker on beat detection. (an improved version needing less calculation was shown to me by user denisC on Discord)
+- added a temposync function by using the audio in as a tap tempo source. So you could use a 4/4 beat to set the tempo if no midi or clock is installed.
+    - To turn on beatsyncing by audio use **P11 + P5**, the led will flicker on beat detection. (an improved version needing less calculation was shown to me by user denisC on Discord)
 
-- to do
-    - bugs
+- resolved bugs / issues:
+    - **multitouch combo's no longer trigger notes when the modulator main pas is touched.**
+        - e.g. recording is set via multitouch P10 + P3, that meant that turning off recording was also programming the switch button to the last setup sound. (though programming does need a double tap)
+        - e.g. when changing panning with P2 + P3/P7, notes of P3 and P7 would trigger. 
+
+- to do / want list
+    - bughunting
     - update this manual and the manual image
-    - create new .bin
     - create video manual
     - move on :-) 
-
-- unsolved bugs / issues:
-    - recording is set via multitouch, but that means that turning off recording will also program the switch button to the last setup sound. (though programming does need a double tap)
-
     - Finding interesting patterns can sometimes take a while, in the  future i should look into using a few presets as well as the random functions. 
 
 ---
