@@ -4,6 +4,8 @@ Made with Plugdata by jonwtr.
 
 In its simplest description FM_BleepBloop is just a complex FM oscillator (based on the video by Simon Hutchinson, link under sources), that makes strange and out of tune noises.
 
+![Simple Touch colored animated](/FX-Instruments/FM_bleepbloop_touch/img/3D_adobe_Neo/FM_BleepBloop_coloredtouch.gif)
+
 🔧 Core Controls
 - 4 Knobs (Pot 0–3): FM modulation
 - 2 Pots (Pot 4–5): Attack & Decay
