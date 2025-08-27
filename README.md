@@ -14,7 +14,10 @@ Most useful / finished ones are:
 
 ## FX & Instruments:
 
+[FM_BleepBloop](/FX-Instruments/FM_bleepbloop_touch/) - a sequence-able weird sound generator using Frequency Modulation. (for Simple Touch)
+
 [Selfdistort Touch](/FX-Instruments/selfdistort_touch/) - a distortion effect for audio in that can self-oscillate. (for Simple Touch)
+
 [Frequencyshift Touch](/FX-Instruments/frequencyshift-touch/) - Two patches playing with frequency shifting. (for Simple Touch)
 
 ---

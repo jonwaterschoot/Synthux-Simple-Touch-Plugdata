@@ -30,6 +30,9 @@ As we experienced some issues with different upload methods, here's a tested wor
 
 ![screenshot of the three HW test patches](HWtestpatches.jpg)
 
+I needed another simple test to find out the left and right channels of a jack. 
+and wanted them to pulse alternating so:
+4. osc220hzL_110hzR_pulsing_to_audio_out = an easy way to detect audio out L and R
 
 Here's a handy list with all the pin numbers: [Daisy seed / Synthux Simple Pin numbering spreadsheet maintained by jonwtr](https://docs.google.com/spreadsheets/d/1xtg_s1tk8tm-6qNkBLFc6V1L_Mpmu-PCOvv7qEyr9mU/edit?usp=sharing)
 
