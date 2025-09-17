@@ -884,7 +884,7 @@
 #X obj 525 33 bng 25 250 50 0 empty empty empty 17 7 0 10 #191919 #e1e1e1 #e1e1e1;
 #X obj 396 160 t f b;
 #X obj 2070 2002 hv.compressor~ 60 2;
-#X obj 2070 1964 *~ 0.5;
+#X obj 2128 1958 *~ 0.5;
 #X obj 2143 277 spigot;
 #X msg 2210 232 1;
 #X obj 2207 203 sel 1;
@@ -1562,7 +1562,7 @@
 #X connect 16 0 17 0;
 #X connect 17 0 18 0;
 #X connect 18 0 19 1;
-#X connect 19 0 533 0;
+#X connect 19 0 532 0;
 #X connect 20 0 387 0;
 #X connect 20 0 342 0;
 #X connect 21 0 345 0;
@@ -2121,7 +2121,6 @@
 #X connect 531 1 517 0;
 #X connect 531 1 515 0;
 #X connect 532 0 499 0;
-#X connect 533 0 532 0;
 #X connect 534 0 539 0;
 #X connect 535 0 534 1;
 #X connect 536 0 535 0;
