@@ -4,6 +4,8 @@ Made with Plugdata by jonwtr.
 
 In its simplest description FM_BleepBloop is just a complex FM oscillator (based on the video by Simon Hutchinson, link under sources), that makes strange and out of tune noises.
 
+Runs on [Synthux Simple Touch](https://www.synthux.academy/shop/touch-2) (Daisy Seed + mpr121 touchsensor)
+
 ![Simple Touch colored animated](/FX-Instruments/FM_bleepbloop_touch/img/3D_adobe_Neo/FM_BleepBloop_coloredtouch.gif)
 
 🔧 Core Controls
@@ -32,6 +34,27 @@ In its simplest description FM_BleepBloop is just a complex FM oscillator (based
 ![overview with color coded pads](/FX-Instruments/FM_bleepbloop_touch/img/FM_BleepBloop_Touch_manualwhite.png)
 
 (There's a version with black behind the text in the /img folder.)
+
+---
+## Installation instructions
+
+download the latest .bin file v0.8.1 _gateout_ [FM_bleepbloop_touch_v0_8_1gateout.bin](FM_bleepbloop_touch_v0_8_1gateout.bin)
+
+Use the [Daisy Seed web programmer](https://flash.daisy.audio/) to upload this file to your Simple Touch.
+
+### pins used for gate in & out:
+
+**Added jacks to Simple Touch:**
+
+By connecting a mono jack to ground and a free analog pin, you can safely use most clock signals. Note that the clock signal should be in Daisy's tolerance range, i.e. 0..+5V. (E.g. Volca's, Denki-oto OMX-27)
+
+ - this is using the custom json file where the pin D28 is gate in and pin D25 is gate out. (pin numbers according to the Daisy pin diagram)
+
+Daisy pin D25 = pin S40 on the Simple Touch PCB
+
+Daisy pin D28 = pin S43 on the Simple Touch PCB
+
+
 
 ---
 
@@ -332,3 +355,24 @@ You might need to install the bootloader first. (last tab on that page)
 ---
 
 ![sketch overview with color coded pads and description](/FX-Instruments/FM_bleepbloop_touch/img/SimpleTouchPCB_FM_BleepBloop.png)
+
+
+---
+
+## Plugdata - notes on uploading / flashing
+
+This patch is pretty chaotic, and has lot's of room for improvement such as:
+
+- Use of subpatches
+- further optimizations
+
+The patch runs best with these settings:
+
+![Use these settings to flash](img/plugdataflashsettings.png)
+
+the custom json used depends on wether you use the gate-out version.
+
+See the two custom json files in the main folder: 
+- [simpletouch_mpr121_knobs_sliders_led-gate.json](../../Custom-JSON/simpletouch_mpr121_knobs_sliders_led-gate.json)
+
+- [simpletouch_mpr121_knobs_sliders_led-gatein28out25.json](../../Custom-JSON/simpletouch_mpr121_knobs_sliders_led-gatein28out25.json)
