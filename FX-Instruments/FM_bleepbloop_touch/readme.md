@@ -38,7 +38,7 @@ Runs on [Synthux Simple Touch](https://www.synthux.academy/shop/touch-2) (Daisy 
 ---
 ## Installation instructions
 
-download the latest .bin file v0.8.1 _gateout_ [FM_bleepbloop_touch_v0_8_1gateout.bin](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/raw/b6607e0bfa85a95e8d8140e8cd70a69d416ff498/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_8_1gateout.bin)
+download the latest .bin file v0.8.1 _gateout_ [FM_bleepbloop_touch_v0_8_1gateout.bin](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/raw/main/FX-Instruments/FM_bleepbloop_touch/FM_bleepbloop_touch_v0_8_1gateout.bin)
 
 Use the [Daisy Seed web programmer](https://flash.daisy.audio/) to upload this file to your Simple Touch.
 
